@@ -26,4 +26,18 @@
         android:name="com.example.myapplication.ui.notifications.NotificationsFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/navigation_student"
+        android:name="com.example.myapplication.ui.student.StudentFragment"
+        android:label="@string/title_activity_student"
+        tools:layout="@layout/activity_student2" />
+    <fragment
+        android:id="@+id/navigation_sInsert"
+        android:name="com.example.myapplication.ui.sInsert.SInsertFragment"
+        android:label="@string/title_studentInsert"
+        tools:layout="@layout/fragment_s_insert" >
+        <action
+            android:id="@+id/action_navigation_sInsert_to_navigation_student"
+            app:destination="@id/navigation_student" />
+    </fragment>
 </navigation>

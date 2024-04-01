@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="10sp"
+    android:background="@color/teal_700"
+    android:padding="9sp">
+
+    <LinearLayout
+        android:layout_width="290sp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="12sp"
+        android:background="@color/design_default_color_surface"
+        android:layout_gravity="center_horizontal"
+        android:padding="2sp">
+
+        <TextView
+            android:id="@+id/name_surname_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Mark Bennet"
+            android:textColor="@color/purple_700"
+            android:textSize="22sp" />
+
+        <EditText
+            android:id="@+id/my_message"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="@color/white"
+            android:backgroundTint="#EDECEC"
+            android:hint="write here message:"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/dropdown_menu"
+
+        android:layout_width="50sp"
+        android:layout_height="100sp"
+        android:layout_gravity="end"
+        android:layout_marginStart="10sp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Drop down menu"
+        android:src="@drawable/ic_launcher_foreground"
+        tools:ignore="TouchTargetSizeIgnore"></ImageButton>
+
+</LinearLayout>
